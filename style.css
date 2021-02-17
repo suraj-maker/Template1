@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variable */
+
+:root{
+    --navbar-height: 60px;
+    /* -webkit-filter: grayscale(100%); */
+}
+
+.body{
+    background: url('img/back.jpg') no-repeat center center/cover ;
+    /* filter: invert(0.30); */
+}
+
+/* .container{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4 ;
+} */
+/* Navigation Bar*/
+#navbar{
+    display: grid;
+    justify-content: center;
+    align-items: center  ;
+    position: relative;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+    margin: 20px 25px;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4 ;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block; 
+    margin-left: 20px;   
+    padding: 5px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color:  rgb(105, 230, 111);
+    text-decoration: underline;
+}
+
+
+/* Home */
+#home{
+    display: flex;
+    flex-direction: row;
+    padding: 3px 300px;
+    /* margin-top: inherit; */
+    height: 630px;
+    position: relative;
+    justify-content: center; 
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4 ;
+}
+
+.home-text{
+    /* display: block; */
+    color: white;
+    margin-right: 50px;
+}
+.home-text p{
+    color: rgb(218, 208, 208);
+}
+.h-primary{
+    font-size: 2.8rem;
+}
+.home-logo img{
+    /* display: block; */
+    height: 350px;
+    width: 350px;
+    border: 20px solid grey;
+    border-radius: 190px;
+    opacity: inherit;
+}
+
+.container-2{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 229px;
+    padding: 20px 5px;
+    position: relative;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.card{
+    display: block;
+    background-color: white;
+    /* border: 2px solid white; */
+    height: 270px;
+    width: 180px;
+    padding: 5px 5px;
+    margin: 14px;  
+    justify-content: center; 
+    align-items: center;
+}
+.card:hover{
+    background-color:  rgb(105, 230, 111);
+}
+.card h1{
+
+    text-align: center;
+    /* font-size: 1.5rem; */
+}
+.card p{
+    text-align: center;
+    margin-top: 5px;
+}
+.card img {
+    height: 88px;
+    width: 88px;
+    margin-left: 44px;
+}
+
+.container-3{
+    /* background-color: gainsboro; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 415px;
+    padding: 20px 5px;
+    margin-left: 277px;
+    position: relative;
+    justify-content: center; 
+    align-items: center;
+}
+ .heading-h1{
+    text-align: center;
+}
+.latest-work{
+    text-align: center;
+    font-size: 3rem;
+}
+.card-layer-2{
+    border: 4px solid white;
+    height: 150px;
+    width: 200px;
+    margin: 15px;
+    overflow: hidden;
+}
+.card-layer-2:hover{
+    border: 4px solid rgba(40, 219, 109, 0.815);
+}
+.card-layer-2 img{
+    height: 150px;
+    width: 200px;
+    filter: grayscale(2);
+    transition: 1s all;
+}
+.card-layer-2 img:hover{
+    filter: brightness(1);
+    transform: scale(1.1,1.1);
+    cursor: pointer;    
+}
+
+.footer{
+    background: rgb(49, 46, 46);
+}
+.container-footer{
+    /* border: 3px solid blueviolet; */   
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    /* border: 3px solid rgb(92, 221, 114); */
+    margin: 27px 7px;
+    padding: 15px;
+    height: 350px;
+    width: 268px;
+}
+.box h4{
+    margin-top: 10px;
+}
+h4 a{
+    font-size: 22px;
+    font-weight: initial;
+    color: rgb(161, 233, 143);
+    text-decoration: none;
+    font-style: initial;
+}
+textarea{
+    background: rgba(10, 10, 10, 0.801);
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.foot{
+    border-top: 2px solid rgb(2, 2, 2);
+    height: 25px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 7px;
+    /* justify-content: center; */
+    /* float: left; */
+}
+
